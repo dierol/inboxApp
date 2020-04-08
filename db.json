@@ -1,0 +1,90 @@
+{
+  "folders": [
+    {
+      "id": 1,
+      "name": "Posta in Arrivo",
+      "emails": 51
+    },
+    {
+      "id": 2,
+      "name": "Speciali",
+      "emails": 42
+    },
+    {
+      "id": 3,
+      "name": "Archiviata",
+      "emails": 201
+    },
+    {
+      "id": 4,
+      "name": "Spam",
+      "emails": 12
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "folder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 2,
+      "folder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 3,
+      "folder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 4,
+      "folder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 5,
+      "folder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 6,
+      "folder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 7,
+      "folder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 8,
+      "folder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    }
+  ]
+}
