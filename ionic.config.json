@@ -1,0 +1,7 @@
+{
+  "name": "inboxApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
