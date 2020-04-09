@@ -2,11 +2,21 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MessagePage } from './message.page';
+import { WritePage } from './write.page';
+import { ReadPage } from './read.page';
 
 const routes: Routes = [
   {
-    path: '/:folder_id',
+    path: '',
     component: MessagePage
+  },
+  {
+    path: 'write',
+    component: WritePage
+  },
+  {
+    path: 'read/:id',
+    component: ReadPage
   }
 ];
 

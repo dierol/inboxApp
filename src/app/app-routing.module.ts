@@ -19,10 +19,10 @@ const routes: Routes = [
     path: 'message/:id',
     loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
   },
-  {
-    path: 'read/:id',
-    loadChildren: () => import('./read/read.module').then( m => m.ReadPageModule)
-  }
+  // {
+  //   path: 'read/:id',
+  //   loadChildren: () => import('./read/read.module').then( m => m.ReadPageModule)
+  // }
 ];
 
 @NgModule({

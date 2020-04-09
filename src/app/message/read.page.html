@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Messaggio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container" *ngIf="renderPage">
+    <ion-item>
+      <ion-label>From:</ion-label><ion-label>{{message.from_name}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Title:</ion-label><ion-label>{{message.title}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Body:</ion-label><ion-text>{{message.text}}</ion-text>
+    </ion-item>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-grid>
+    <ion-row no-padding no-margin>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button primary (click)="openWrite(message)">Rispondi</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

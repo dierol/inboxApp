@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Scrivi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <form
+      #objForm="ngForm"
+      class="form-standard"
+      (ngSubmit)="send()"
+    >
+      <ion-item>
+        <ion-label position="stacked">To</ion-label>
+        <ion-input type="text" required
+          name="username"
+          [(ngModel)]="model.from_name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="text" required
+          name="email"
+          [(ngModel)]="model.from_email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Title</ion-label>
+        <ion-input type="text" required
+          name="title"
+          [(ngModel)]="model.title"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Body</ion-label>
+        <ion-textarea name="title" [(ngModel)]="model.text" required></ion-textarea>
+      </ion-item>
+      <ion-grid>
+        <ion-row no-padding no-margin>
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-button type="submit"
+              class="ladda-button"
+              [ladda]="isLoading"
+              data-style="slide-right"
+              [disabled]="!model.title || !model.text">
+              <span class="ladda-label">Invia</span>
+              <span class="ladda-spinner"></span>
+              <div class="ladda-progress" style="width: 0px;"></div>
+            </ion-button>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+</ion-content>

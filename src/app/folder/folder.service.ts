@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { LoadingController } from '@ionic/angular';
+
 import { Folder } from './folder';
 
 @Injectable({
@@ -9,13 +11,26 @@ export class FolderService {
 
   endpoint: string = 'http://localhost:3000/folders/';
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private loadingController: LoadingController
+  ) { }
 
-  list() {
-    return this.http.get<Folder[]>(this.endpoint);
+  async list() {
+    const loading = await this.loadingController.create({
+      message: 'Please wait...',
+      duration: 2000
+    });
+    await loading.present();
+
+    const { role, data } = await loading.onDidDismiss();
+
+    let folders = this.http.get<Folder[]>(this.endpoint).toPromise();
+    return folders;
   }
 
-  get(id: string) {
-    return this.http.get<Folder>(this.endpoint+id);
+  get(id: number) {
+    let folder = this.http.get<Folder>(this.endpoint+id).toPromise();
+    return folder;
   }
 }

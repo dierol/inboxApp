@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { LoadingController } from '@ionic/angular';
+
 import { Message } from './message';
 import { StorageService } from '../shared/storage.service';
 
@@ -12,14 +14,16 @@ export class MessageService {
 
   constructor(
     private http: HttpClient,
-    private storageService: StorageService
+    private storageService: StorageService,
+    private loadingController: LoadingController
   ) { }
 
   list() {
-    return this.http.get<Message[]>(this.endpoint);
+    let messages = this.http.get<Message[]>(this.endpoint).toPromise();
+    return messages;
   }
 
-  get(id: string) {
+  get(id: number) {
     return this.storageService.get('message'+id).then(
       message => {
         if (!!message) {
@@ -33,9 +37,23 @@ export class MessageService {
         }
       }
     );
-  }
+  };
 
-  getFolderMessageById(id: string) {
-    return this.http.get<Message[]>(this.endpoint+'?folder_id='+id);
+  delete(id: number) {
+    let message = this.http.delete(this.endpoint+'/'+id).toPromise();
+    return message;
+  };
+
+  async getFolderMessagesById(id: string, offset: number = 0) {
+    const loading = await this.loadingController.create({
+      message: 'Please wait...',
+      duration: 2000
+    });
+    await loading.present();
+
+    const { role, data } = await loading.onDidDismiss();
+
+    let messages = this.http.get<Message[]>(this.endpoint+'?folder_id='+id+'&_limit=15&_start='+offset).toPromise();
+    return messages;
   }
 }

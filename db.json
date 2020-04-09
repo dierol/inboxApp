@@ -2,53 +2,49 @@
   "folders": [
     {
       "id": 1,
-      "name": "Posta in Arrivo",
-      "emails": 51
+      "name": "Posta in arrivo",
+      "emails": 51,
+      "icon": "mail"
     },
     {
       "id": 2,
-      "name": "Speciali",
-      "emails": 42
+      "name": "Posta non letta",
+      "emails": 12,
+      "icon": "mail-unread"
     },
     {
       "id": 3,
-      "name": "Archiviata",
-      "emails": 201
+      "name": "Speciali",
+      "emails": 42,
+      "icon": "star"
     },
     {
       "id": 4,
-      "name": "Spam",
-      "emails": 12
+      "name": "Archiviata",
+      "emails": 201,
+      "icon": "archive"
     }
   ],
   "messages": [
     {
-      "id": 1,
-      "folder_id": 1,
-      "title": "abc",
-      "text": "lorem ipsum…",
-      "from_name": "Pippo",
-      "from_email": "pippo@corley.it"
-    },
-    {
       "id": 2,
-      "folder_id": 1,
-      "title": "abc",
-      "text": "lorem ipsum…",
+      "floder_id": 1,
+      "title": "banana",
+      "text": "lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum…lorem ipsum… lorem ipsum… lorem ipsum…",
       "from_name": "Pippo",
       "from_email": "pippo@corley.it"
     },
     {
       "id": 3,
-      "folder_id": 1,
+      "floder_id": 1,
       "title": "abc",
-      "text": "lorem ipsum…",
+      "text": "lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum…",
       "from_name": "Pippo",
       "from_email": "pippo@corley.it"
     },
     {
       "id": 4,
-      "folder_id": 1,
+      "floder_id": 1,
       "title": "abc",
       "text": "lorem ipsum…",
       "from_name": "Pippo",
@@ -56,15 +52,7 @@
     },
     {
       "id": 5,
-      "folder_id": 1,
-      "title": "abc",
-      "text": "lorem ipsum…",
-      "from_name": "Pippo",
-      "from_email": "pippo@corley.it"
-    },
-    {
-      "id": 6,
-      "folder_id": 1,
+      "floder_id": 1,
       "title": "abc",
       "text": "lorem ipsum…",
       "from_name": "Pippo",
@@ -72,7 +60,7 @@
     },
     {
       "id": 7,
-      "folder_id": 1,
+      "floder_id": 1,
       "title": "abc",
       "text": "lorem ipsum…",
       "from_name": "Pippo",
@@ -80,7 +68,447 @@
     },
     {
       "id": 8,
-      "folder_id": 1,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 9,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 10,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 11,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum…lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 12,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 13,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 14,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 15,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 16,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 17,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 18,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 19,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 20,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 21,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 22,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 23,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 24,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 25,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 26,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum…lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 27,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 28,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 29,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 30,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 31,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 32,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 33,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 34,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum…lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 35,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 36,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 37,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 38,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 39,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 40,
+      "floder_id": 1,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 41,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum… lorem ipsum… lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 42,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 43,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 44,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 45,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 46,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 47,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 48,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 49,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum…lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 50,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 51,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 52,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 53,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 54,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 55,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 56,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 57,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 58,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 59,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 60,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 61,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 62,
+      "floder_id": 2,
+      "title": "abc",
+      "text": "lorem ipsum…",
+      "from_name": "Pippo",
+      "from_email": "pippo@corley.it"
+    },
+    {
+      "id": 63,
+      "floder_id": 2,
       "title": "abc",
       "text": "lorem ipsum…",
       "from_name": "Pippo",
