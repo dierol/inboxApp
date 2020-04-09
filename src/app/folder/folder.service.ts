@@ -7,7 +7,7 @@ import { Folder } from './folder';
 })
 export class FolderService {
 
-  endpoint: string = 'https://jsonplaceholder.typicode.com/folders/';
+  endpoint: string = 'http://localhost:3000/folders/';
 
   constructor(private http: HttpClient) { }
 
