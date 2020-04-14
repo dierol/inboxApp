@@ -27,14 +27,6 @@
   ],
   "messages": [
     {
-      "id": 2,
-      "floder_id": 1,
-      "title": "banana",
-      "text": "lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum… lorem ipsum…lorem ipsum… lorem ipsum… lorem ipsum…",
-      "from_name": "Pippo",
-      "from_email": "pippo@corley.it"
-    },
-    {
       "id": 3,
       "floder_id": 1,
       "title": "abc",
@@ -44,14 +36,6 @@
     },
     {
       "id": 4,
-      "floder_id": 1,
-      "title": "abc",
-      "text": "lorem ipsum…",
-      "from_name": "Pippo",
-      "from_email": "pippo@corley.it"
-    },
-    {
-      "id": 5,
       "floder_id": 1,
       "title": "abc",
       "text": "lorem ipsum…",

@@ -24,18 +24,14 @@ export class MessagePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.activatedRoute.params.subscribe((params: any) => {
-      this.params = Object.assign({}, params);
-
-      if (this.params.hasOwnProperty('id') && !!this.params['id']) {
-        this.messageService.getFolderMessagesById(this.params['id']).then(
-          messages => {
-            this.messages = messages;
-            console.log(this.messages)
-          }
-        );
-      }
-    });
+    this.params = this.activatedRoute.snapshot.params || {};
+    if (this.params.hasOwnProperty('id') && !!this.params['id']) {
+      this.messageService.getFolderMessagesById(this.params['id']).then(
+        messages => {
+          this.messages = messages;
+        }
+      );
+    }
   };
 
   openMessage(folderId: number, id: number) {

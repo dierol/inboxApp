@@ -11,6 +11,7 @@ import { Folder } from './folder';
 })
 export class FolderPage implements OnInit {
   public folders: Folder[];
+  public renderList: boolean = false;
 
   constructor(
     private router: Router,
@@ -21,6 +22,7 @@ export class FolderPage implements OnInit {
     this.folderService.list().then(
       folders => {
         this.folders = folders;
+        this.renderList = true
       }
     );
   };

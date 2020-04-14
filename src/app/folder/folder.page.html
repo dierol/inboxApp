@@ -15,11 +15,11 @@
   </ion-header>
 
   <div id="container">
-    <ion-list>
+    <ion-list [hidden]="!renderList">
       <ion-list-header lines="inset">
         <ion-title>Inbox</ion-title>
       </ion-list-header>
-      <ion-item *ngFor="let folder of folders" (click)="openFolder(folder.id)">
+      <ion-item class="pointer" *ngFor="let folder of folders" (click)="openFolder(folder.id)">
         <ion-icon slot="start" [ios]="folder.icon + '-outline'" [md]="folder.icon + '-sharp'"></ion-icon>
         <ion-label>{{ folder.name }}</ion-label>
         <ion-badge slot="end">{{ folder.emails > 99 ? '99+' : folder.emails }}</ion-badge>
